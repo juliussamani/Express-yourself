@@ -1,0 +1,17 @@
+PImage desktop;
+PImage error;
+
+void setup()
+{
+  size(1000,549);
+  frameRate(50);
+  desktop = loadImage("desktop.jpg"); 
+  error = loadImage("error.jpg"); 
+  
+  image(desktop,0,0);
+}
+
+void draw()
+{
+  image(error,mouseX,mouseY);
+}
